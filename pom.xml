@@ -120,7 +120,7 @@
 			<version>5.1.6</version>
 		</dependency>
 
-		 <dependency>
+		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.6.1</version>
@@ -130,7 +130,7 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.6.1</version>
-		</dependency> 
+		</dependency>
 
 		<dependency>
 			<groupId>log4j</groupId>
@@ -185,6 +185,22 @@
 			<artifactId>antlr-runtime</artifactId>
 			<version>3.4</version>
 		</dependency>
+		<!-- start jars required for spring validation -->
+		<!-- Java validation API -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+		<!-- Hibernate Validator implementation, it is a JSR-303 provider -->
+		<!-- This library has nothing to do with databases and relational mapping, 
+			it just does validation -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.0.1.Final</version>
+		</dependency>
+		<!-- end jars required for spring validation -->
 	</dependencies>
 	<build>
 		<finalName>RoomBookingSystem</finalName>
