@@ -8,11 +8,13 @@
 		<tr>
 			<td>User Id:</td>
 			<td><form:input path="userId" /></td>
+			<td><form:errors path="userId"></form:errors></td>
 		</tr>
 
 		<tr>
 			<td>Password:</td>
 			<td><form:password path="password" /></td>
+			<td><form:errors path="password"></form:errors></td>
 		</tr>
 
 		<tr>

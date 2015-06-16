@@ -1,28 +1,34 @@
 package com.mandi.rbs.formBeans;
 
+import javax.validation.constraints.Size;
+
 public class LoginUser {
-    private String userId;
-    private String password;
 
-    public String getUserId() {
-        return userId;
-    }
+	@Size(min = 4, max = 4)
+	private String userId;
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+	@Size(min = 5, max = 15)
+	private String password;
 
-    public String getPassword() {
-        return password;
-    }
+	public String getUserId() {
+		return userId;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 
-    @Override
-    public String toString() {
-        return "LoginUser [userId=" + userId + ", password=" + password + "]";
-    }
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "LoginUser [userId=" + userId + ", password=" + password + "]";
+	}
 
 }

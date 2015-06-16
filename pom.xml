@@ -9,7 +9,10 @@
 	<name>RoomBookingSystem</name>
 
 	<properties>
-		<spring.version>3.0.5.RELEASE</spring.version>
+
+		<spring.version>4.0.0.RELEASE</spring.version>
+		<!-- <spring.version>3.0.5.RELEASE</spring.version> -->
+
 	</properties>
 
 	<dependencies>
@@ -49,9 +52,6 @@
 			<artifactId>spring-tx</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
-
-
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -187,18 +187,24 @@
 		</dependency>
 		<!-- start jars required for spring validation -->
 		<!-- Java validation API -->
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
-		</dependency>
+		<!-- <dependency> <groupId>javax.validation</groupId> <artifactId>validation-api</artifactId> 
+			<version>1.1.0.Final</version> </dependency> -->
 		<!-- Hibernate Validator implementation, it is a JSR-303 provider -->
 		<!-- This library has nothing to do with databases and relational mapping, 
 			it just does validation -->
+		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-validator</artifactId> 
+			<version>5.0.1.Final</version> </dependency> -->
+		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-entitymanager</artifactId> 
+			<version>4.2.8.Final</version> </dependency> -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>5.0.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
 		</dependency>
 		<!-- end jars required for spring validation -->
 	</dependencies>
