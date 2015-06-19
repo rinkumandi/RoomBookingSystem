@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base_definiion" template="/WEB-INF/views/baseLayout/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/baseLayout/header.jsp" />
+		<put-attribute name="leftPanel" value="/WEB-INF/views/baseLayout/leftPanel.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/baseLayout/footer.jsp" />
+	</definition>
+	
+	<definition name="home_definiion" template="/WEB-INF/views/baseLayout/home_layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/baseLayout/header.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/baseLayout/footer.jsp" />
+	</definition>
+	
+	<definition name="home" extends="home_definiion">
+		<put-attribute name="title" value="RoomBookingSystem-home" />
+		<put-attribute name="menu" value="/WEB-INF/views/baseLayout/menu.jsp" />
+	</definition>
+	
+	<definition name="adminLogin" extends="home_definiion">
+		<put-attribute name="title" value="RoomBookingSystem-admin" />
+		<put-attribute name="menu" value="/WEB-INF/views/baseLayout/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/adminLogin.jsp" />
+	</definition>
+	
+	<definition name="adminHome" extends="base_definiion">
+	<put-attribute name="title" value="RoomBookingSystem-AdminHome" />
+	<put-attribute name="body" value="/WEB-INF/views/admin/adminHome.jsp" />
+	</definition>
+	
+	<!-- <definition name="home" extends="base_definiion">
+		<put-attribute name="title" value="RoomBookingSystem-home" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition> -->
+</tiles-definitions>
