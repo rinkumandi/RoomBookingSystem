@@ -11,7 +11,7 @@
 						name="header" /></td>
 			</tr>
 			<tr>
-				<td width="200"><tiles:insertAttribute name="leftPanel" /></td>
+				<td width="300"><tiles:insertAttribute name="leftPanel" /></td>
 				<td height="470"><tiles:insertAttribute name="body" /></td>
 			</tr>
 			<tr>
